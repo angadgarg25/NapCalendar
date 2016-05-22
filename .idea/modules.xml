@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NapCalendar.iml" filepath="$PROJECT_DIR$/NapCalendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NapCalendarRep.iml" filepath="$PROJECT_DIR$/NapCalendarRep.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
