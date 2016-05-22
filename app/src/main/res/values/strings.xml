@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nap Calendar</string>
+    <string-array name="naps">
+        <item>Power Nap</item>
+        <item>Slow-Wave Nap 1</item>
+        <item>Slow-Wave Nap 2</item>
+        <item>Slow-Wave Nap 3</item>
+        <item>REM Cycle Nap</item>
+    </string-array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:animateLayoutChanges="true"
+    android:background="#424242"
+    android:gravity="center"
+    tools:context="greggnod.napcalendar.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:textColor="#FFFFFF"
+        android:text="Nap Alarm"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:text="Back"
+        android:textColor="#e57373"
+        android:layout_alignLeft="@+id/napbutton"
+        android:layout_alignRight="@+id/napbutton"
+        android:layout_alignStart="@+id/napbutton"
+        android:layout_alignEnd="@+id/napbutton"
+        android:id="@+id/backbutton"
+        android:layout_above="@+id/napbutton"
+        android:layout_centerHorizontal="true"
+        android:onClick="viewToPrev"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:text="Begin Nap"
+        android:visibility="invisible"
+        android:textColor="#e57373"
+        android:id="@+id/napbutton"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="naptime"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timed Nap"
+        android:textColor="#e53935"
+        android:id="@+id/radioButton"
+        android:textStyle="bold"
+        android:paddingLeft="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:paddingRight="12dp"
+        android:onClick="chooseTypeNap"
+        android:layout_alignTop="@+id/list"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nap Until Time"
+        android:textStyle="bold"
+        android:textColor="#e53935"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/radioButton2"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/list"
+        android:entries="@array/naps"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignStart="@id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_centerVertical="true"
+        android:foregroundGravity="center"
+        android:layout_above="@+id/backbutton"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView"
+        android:saveEnabled="true"
+        android:listSelector="@drawable/item"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:divider="#424242"
+        android:textFilterEnabled="true"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>
