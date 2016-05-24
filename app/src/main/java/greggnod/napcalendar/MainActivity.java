@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -70,6 +71,22 @@ public class MainActivity extends AppCompatActivity {
         } else {
             setContentView(R.layout.activity_main);
         }
+    }
+
+    public void naptime2(View view){
+        final Dialog dialog = new Dialog(context);
+        dialog.setContentView(R.layout.time_pick);
+        dialog.setTitle( Html.fromHtml("<font color='#e53935'>PICK A WAKE-UP TIME!</font>"));
+        Button btOK = (Button) dialog.findViewById(R.id.button5);
+        btOK.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 
     public void naptime(View v){

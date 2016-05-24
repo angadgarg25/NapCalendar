@@ -71,6 +71,7 @@
         android:layout_height="wrap_content"
         android:text="Nap Until Time"
         android:textStyle="bold"
+        android:onClick="naptime2"
         android:textColor="#e53935"
         style="?android:attr/borderlessButtonStyle"
         android:id="@+id/radioButton2"

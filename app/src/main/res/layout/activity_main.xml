@@ -59,5 +59,16 @@
         android:layout_below="@+id/textView3"
         android:layout_above="@+id/button2" />
 
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageButton"
+        android:src="@drawable/settings"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>
