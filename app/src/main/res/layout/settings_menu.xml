@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="38sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="44dp"
+            android:textColor="#000000"
+            android:text="Info &amp; Settings"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e53935"
+            android:textAllCaps="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="12sp"
+            android:text="Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="First Last"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e53935"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:text="E-mail linked with Google Calendar"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="example@example.com"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginBottom="12dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#e53935"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:switchPadding="12dp"
+            android:text="Persitent Alarm"
+            android:id="@+id/switch1" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="viewToMain"
+        android:id="@+id/button7"
+        android:textColor="#e57373"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

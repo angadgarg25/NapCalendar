@@ -73,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void viewToMain(View view){
+        setContentView(R.layout.activity_main);
+    }
+
+    public void viewToSetting(View view){
+        setContentView(R.layout.settings_menu);
+    }
+
     public void naptime2(View view){
         final Dialog dialog = new Dialog(context);
         dialog.setContentView(R.layout.time_pick);
