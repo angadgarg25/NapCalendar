@@ -124,7 +124,16 @@ public class MainActivity extends AppCompatActivity {
             TextView dialogMsg = (TextView) dialog.findViewById(R.id.textView2) ;
             dialogMsg.setText(message);
             dialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog_color);
-            Button btOK = (Button) dialog.findViewById(R.id.button4);
+            Button btC = (Button) dialog.findViewById(R.id.button4);
+            Button btOK = (Button) dialog.findViewById(R.id.button3);
+            btC.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    dialog.dismiss();
+                }
+            });
             btOK.setOnClickListener(new View.OnClickListener() {
 
                 @Override
@@ -150,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
+
             dialog.show();
         }
     }
